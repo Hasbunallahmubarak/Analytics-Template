@@ -1,0 +1,50 @@
+@charset"UTF-8";
+html,body{height: 100%;}
+*{margin: 0px;box-sizing: border-box;}body{font-family: Raleway,Helvettica,sans-serif;background-color: #f1f1f1;}
+.nav{background-color: #000;overflow: hidden;position: fixed;top: 0;width: 100%;padding: 2px; z-index: 2;}
+.nav a{text-decoration: none;color: #fff;float: right;margin-right: 10px;padding: 10px;font-size: 18px;}
+a.menu{float: left;display: none;} h2{font-weight: lighter;padding: 10px 0px;margin: 10px 0px;}h1{font-weight: lighter;}
+.side-nav{width:25%;background-color: #fff;margin-top: 45px; position: fixed;transition: 0.5s;padding-top: 5px;
+ overflow: auto; top: 0px;left: 0px;float: left;height: 100%;animation: 0.5s animate;}
+div.content{margin-top: 45px;overflow: hidden;float: left;margin-left: 25%;width: 75%;padding:20px 10px;transition:0.5s;}
+.side-nav div{border-bottom: 1px solid #eee;overflow: hidden;margin:30px 0px; padding:7px 15px;}
+.side-nav img,.rec img,.rect img{border-radius: 50%;float: left;width: 50px;height: 50px;}
+.dash{overflow: hidden;padding: 10px;}.side-nav h2{padding:10px 20px;}
+.mike p{margin-left: 30px; display: inline-block;float: left;}.dash h3{padding: 10px 0px;}
+.dash > div{width: 24%;float: left;margin: 1%;margin-top: 0px; margin-left: 0px;padding: 30px;background-color: blue;}
+.links a{display: block;padding:10px 20px; color: #000;text-decoration: none;font-size: 15px;}
+a.over{background-color: #0c87eb;color:#fff;}.links a:hover{background-color: #ddd;color: #000;}
+a#close{padding: 20px;background-color: rgba(0,0,0,0.6);color: white;display: none;}a#close:hover{background-color: rgba(0,0,0,1);color: #fff;}
+div.mes{background-color: rgba(255,0,0,0.8);color: #fff;position: relative;padding:70px;}.mes span{position: absolute;right: 0px;top: 10px;padding: 10px;font-size: 25px;}
+ div.mes {position: relative;}.mes h3{position:absolute; bottom: 15px; left: 12px;font-weight: lighter;}
+div.view{background-color: rgba(0, 128, 255, 0.9);}div.share{background-color: teal;}div.user{background-color: orange;}
+.reg_fed{overflow: hidden;}.reg{width: 35%;float: left;padding: 10px;} .reg img{width: 100%;}
+.fed{width: 65%;float: left;padding: 10px;}.fed p{padding: 10px 50px;font-size: 15px;}.fed i{float: right;direction: ltr;}p.new{background-color: #fff;}
+.per{overflow: hidden;background-color: #ddd;margin: 10px 0px;}.per span{text-align: center;color: #fff; padding: 10px;background-color: rgba(0,200,60);width: 25%;display: block;}
+.fif span{width: 50%;background-color: orange; color: #000;}.rat span{width: 75%;background-color:rgba(255,0,0,0.8); }.pra p{margin:20px 0px;}
+.ctr{border:1px solid #ccc;overflow: hidden;}.ctr p{padding: 10px;}.ctr p:hover{background-color: #ccc;}.ctr span{float: right;margin-right: 25%;}
+.content a{text-decoration: none;color: #fff;padding: 10px;display: inline-block;margin: 20px 0px;background-color:rgba(100,100,100,1);}.content a:hover{background-color: #ccc;color:#000;}
+.rec{background-color: #fff;box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.3);} .rec div{overflow: hidden;padding: 10px;border-bottom: 1px solid #ddd;}
+.rec h1{display: inline-block;float: left;margin-left: 20px;padding: 10px;}.rect{margin: 10px 0px;overflow: hidden;} .rect img{width: 100px;height: 100px;margin-right: 50px;}.rect div{padding: 10px;}
+.rect h3{font-weight: lighter;margin-bottom: 10px;}.rect span{font-size: 15px;}.rect p{margin: 10px 0px;font-size:15px;}.dst h3{font-weight: lighter;margin: 10px 0px;}
+.dst{overflow: hidden;background-color: rgba(100,100,100,1);color: #fff;padding: 20px;margin: 30px -10px;}.dst > div{width: 33.33%;float: left;padding:10px; }.dst p{margin: 10px 0px;font-size: 15px;}
+.dst span{padding: 3px;width: 100%;display: block;margin: 10px 0px;}.demo span{background-color: rgba(0,200,60);}.sys span{background-color: rgba(255,0,0,0.8);}.tar span{background-color: orange;}
+.dst p{margin: 20px 0px;}.footer a{background-color: inherit;color: #000;}.footer h2{margin: -10px 0px; text-transform: uppercase;}
+@keyframes animate{
+	from{left:-10%;}
+	to{left:  0px;}
+}
+@media screen and (max-width: 1000px){
+	div.content{width: 100%;margin-left: 0px;}
+	.side-nav{display: none; width:300px;z-index: 2;}
+	a.menu{display: inline;}
+	a#close{display: block;}
+	#overlay{width: 100%;height: 100%;z-index: 1;background-color: rgba(0,0,0,0.3);position: fixed;top: 0;right: 0;display: none;cursor: pointer;}
+
+}
+@media screen and (max-width: 600px){
+	.dash > div{width: 100%;margin: 0px;}
+	.reg,.fed{width: 100%;}
+	.rect div{display: block;overflow: hidden;}
+	.dst > div{width: 100%;}
+}
